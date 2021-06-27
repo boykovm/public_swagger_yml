@@ -1,0 +1,29 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: ProjectTitle
+  description: ProjectDescription
+paths: 
+  /posts:
+    get:
+      description: Gets Post
+      responses:
+        "200":
+          description: Gets posts array
+          content: 
+            application/json:
+              schema:
+                type: rray
+                items: 
+                  type: string
+    post:
+      description: Add Post
+      responses:
+        "200":
+          description: Post was added
+          
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /mygstyle19/ProjectName/1.0.0
+schemes:
+ - http
